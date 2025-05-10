@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>mini youtube</title>
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+            header{
+                background-color: #ff0000;
+                color: white;
+                padding: 10px;
+                text-align: center;
+            }
+            .video-grid{
+                display: grid;
+                grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+                gap: 20px;
+                padding: 20px;
+            }
+            .video-card{
+                border: 1px solid #ccc;
+                padding: 10px;
+                border: radius 8px;
+            }
+            video{
+                width: 100px;
+                height: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>mini youtube</h1>
+        </header>
+        <div class="video-grid">
+            <div class="video-card">
+                <h3>sample video 1</h3>
+                <video controls>
+                    <source src="sample1.mp4" type="video/mp4">
+                    your browser does not support the video tag.
+                    </video>
+            </div>
+            <div class="video-card">
+                <h3>sample video 2</h3>
+                <video controls>
+                    <source src="sample2.mp4" type="video/mp4">
+                    your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="video-card">
+                <h3>sample video 3</h3>
+                <video controls>
+                    <source src="sample3.mp4" type="video/mp4">
+                    your browser does not support the video tag.
+                </video>
+            </div>
+    </body>
+</html>
